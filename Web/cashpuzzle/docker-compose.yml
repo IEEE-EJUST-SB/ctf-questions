@@ -1,0 +1,25 @@
+services:
+  cash-puzzle-authentication-proxy:
+    build:
+      context: authentication-proxy
+    environment:
+      KEY: baa1e62a572c5747641a4d8b80623b88
+    ports:
+      - "127.0.0.1:5000:5000"
+      - "127.0.0.1:5001:5001"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/log
+  cash-puzzle-puzzle-api:
+    build:
+      context: puzzle-api
+    environment:
+      KEY: baa1e62a572c5747641a4d8b80623b88
+      FLAG: DEVSTORM{lHh3eDLhP*%q4v@a}
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/log

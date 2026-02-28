@@ -1,0 +1,13 @@
+services:
+  jwtf:
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8007:1337"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/log

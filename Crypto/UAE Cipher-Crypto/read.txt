@@ -1,0 +1,7 @@
+name: UAE Cipher
+
+description:
+The UAE eGov proudly announces its brand-new “fast and secure” cipher — but speed shouldn’t come at the cost of security. Inside the challenge files, you’ll find encrypted messages, a custom encryption script, and maybe even the key generation logic. Your job? Reverse the cipher, find its weakness (is it XOR with predictable entropy? A broken mode of operation? A hardcoded IV?), and decrypt the flag before the government realizes their “revolutionary” crypto is anything but.
+
+category: Crypto
+challenge type: Classic

@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8002:80"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/log
+      - /var/log/apache2
+      - /var/lib/php/sessions
+    volumes:
+      - ./src:/var/www/html:ro
+    networks:
+      - app-network
+
+networks:
+  app-network:

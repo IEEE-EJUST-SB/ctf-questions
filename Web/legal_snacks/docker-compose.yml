@@ -1,0 +1,13 @@
+services:
+  legalsnack:
+    build:
+      context: .
+    ports:
+      - "8005:5000"
+    environment:
+      - FLAG=DEVSTORM{2#rNv70VfUKcpcOY}
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/log

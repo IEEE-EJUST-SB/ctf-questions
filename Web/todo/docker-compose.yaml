@@ -1,0 +1,12 @@
+services:
+  todo:
+    build:
+      context: .
+    ports:
+      - "8008:1337"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/log

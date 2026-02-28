@@ -1,0 +1,11 @@
+services:
+  workerdb:
+    build:
+      context: .
+    ports:
+      - "8006:5500"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /run
+      - /var/log

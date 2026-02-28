@@ -1,0 +1,7 @@
+name: Pure Randomness
+
+description:
+The UAE eGov claims they’ve invented a keyless protocol — no keys, no encryption, just “pure randomness.” Sounds revolutionary… until you realize true randomness is hard to fake. Dive into the challenge files to analyze their “random” data generator. Is it seeded poorly? Repeating patterns? Predictable outputs? Exploit the illusion of entropy to reconstruct the hidden message or recover the flag — because in crypto, if it’s not truly random, it’s broken.
+
+category: Crypto
+challenge type: Classic
